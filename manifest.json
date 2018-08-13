@@ -1,0 +1,24 @@
+{
+  "name": "code64",
+  "manifest_version": 2,
+  "version": "0.1",
+  "description": "decode and encode base64 strings",
+  "icons": {
+    "16": "logo.png",
+    "64": "logo.png",
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js":["script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [],
+  "browser_action": {
+    "default_title": "code64",
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  }
+}
